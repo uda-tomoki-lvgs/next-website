@@ -1,5 +1,52 @@
 import Image from "next/image";
+import HorizontalLine from "./HorizontalLine";
 
+const Home = () => {
+  return (
+    <main>
+      <div></div>
+      <div className="top-page">
+        <div className="site-title">宇田 知生のホームページ</div>
+        <div className="flex-info">
+          <div className="left-info">
+            <img className="self-photo" src="/IMG_6220.jpeg" />
+            <div className="self-index">
+              宇田 知生（うだ ともき）
+              <br />
+              生年月日 2000年8月26日
+              <br />
+              血液型 A型
+              <br />
+              プロフィール
+            </div>
+          </div>
+          <div className="right-info">
+            <div className="latest-info-title">★★★　最新情報　★★★</div>
+            <HorizontalLine />
+            <div className="latest-info">
+              <span>・住所</span>
+              <p>東京23区のどっか</p>
+            </div>
+            <HorizontalLine />
+            <div className="attention-info">
+              当サイトの内容、テキスト、画像等の無断転載・無断使用を固く禁じます。
+              <br />
+              また、まとめサイト等への引用を厳禁致します。
+              <br />
+              お問い合わせはメールでご連絡をお願い致します。
+              <br />
+              ※最近、SNS上で宇田知生を名乗るアカウントがあるといった“なりすまし”の報告が寄せられておりますが、宇田本人は一切行っておりませんので、ご注意ください
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default Home;
+
+/*
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -111,3 +158,4 @@ export default function Home() {
     </main>
   );
 }
+*/
