@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import BackgroundImage from "./backgroundImage";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="jp">
-      <body style={BackgroundImage()}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

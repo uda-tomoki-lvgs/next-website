@@ -1,0 +1,12 @@
+.pagetab {
+  width: 25vw;
+  background-color: #f0f0ff;
+  border-right: 5px solid #cccccc;
+  box-shadow: 0.5px 0px 0px black;
+}
+
+.tab-item > div {
+  text-align: left;
+  width: 10vw;
+  margin: 30px auto;
+}
