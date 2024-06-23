@@ -1,13 +1,9 @@
 import { CSSProperties } from "react";
-import toppage from "../../public/toppage.png";
+import { StaticImageData } from "next/image";
 
-const BackgroundImage = () => {
+const BackgroundImage = (img: StaticImageData) => {
   return {
-    backgroundImage: `url(${toppage.src})`,
-    //zIndex: "-1",
-    //position: "absolute",
-    //width: "100vw",
-    //height: "100vh",
+    backgroundImage: `url(${img.src})`,
   } as CSSProperties;
 };
 

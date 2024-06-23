@@ -1,9 +1,12 @@
+import Link from "next/link";
 import HorizontalLine from "./HorizontalLine";
 import BackgroundImage from "./backgroundImage";
+import toppage from "../../public/toppage.png";
+import "./toppage.css";
 
 const TopPage = () => {
   return (
-    <div className="top-page main-page" style={BackgroundImage()}>
+    <div className="top-page" style={BackgroundImage(toppage)}>
       <div className="site-title">宇田 知生のホームページ</div>
       <div className="flex-info">
         <div className="left-info">
@@ -15,7 +18,7 @@ const TopPage = () => {
             <br />
             血液型 A型
             <br />
-            プロフィール
+            <Link href="/profile">プロフィール</Link>
           </div>
           <div className="contact-message">
             If you have any questions
@@ -29,7 +32,7 @@ const TopPage = () => {
             the following instagram account.
             <br />
           </div>
-          <div className="contact-info">instagram: @tomoki826</div>
+          <div className="contact-info">instagram: <Link href="https://www.instagram.com/tomoki.826/">@tomoki826</Link></div>
           <div className="contact-address">
             大学時代の住所:
             <br />

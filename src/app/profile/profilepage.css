@@ -1,0 +1,22 @@
+.profile-page {
+    margin-left: 5px;
+    white-space: pre-wrap;
+}
+
+.profile-title {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+table {
+    margin: 0 auto;
+    border-spacing: 50px 30px;
+}
+
+td {
+    text-align: left;
+    vertical-align: top;
+}
