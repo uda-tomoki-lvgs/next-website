@@ -17,3 +17,7 @@ main {
 main>* {
   width: 100vw;
 }
+
+img {
+  pointer-events: none;
+}

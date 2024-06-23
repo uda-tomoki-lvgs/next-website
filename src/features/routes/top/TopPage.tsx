@@ -10,7 +10,7 @@ const TopPage = () => {
       <div className="site-title">宇田 知生のホームページ</div>
       <div className="flex-info">
         <div className="left-info">
-          <img className="self-photo" src="/myself.jpeg" alt="宇田 知生" />
+          <img className="self-photo" src="/myself.jpeg" />
           <div className="self-index">
             宇田 知生（うだ ともき）
             <br />
@@ -32,7 +32,7 @@ const TopPage = () => {
             the following instagram account.
             <br />
           </div>
-          <div className="contact-info">instagram: <Link href="https://www.instagram.com/tomoki.826/">@tomoki826</Link></div>
+          <div className="contact-info">instagram: <Link href="https://www.instagram.com/tomoki.826/" target="_blank">@tomoki826</Link></div>
           <div className="contact-address">
             大学時代の住所:
             <br />
@@ -49,7 +49,7 @@ const TopPage = () => {
           <div className="latest-info-title">★★★　最新情報　★★★</div>
           <HorizontalLine />
           <div className="latest-info">
-            ・サイゼリヤ
+            ・サイゼリヤ <Link href="https://www.saizeriya.co.jp/PDF/irpdf001480.pdf" target="_blank">夏の新メニュー</Link>
             <br />
             <span>バッファローモッツァレラのマルゲリータピザ</span>
             <br />
