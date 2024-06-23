@@ -1,0 +1,18 @@
+.admin-page {
+    background-color: #f0f0ff;
+    text-align: center;
+}
+
+.admin-title {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.admin-attention {
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto 60px auto;
+}

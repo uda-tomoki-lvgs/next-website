@@ -1,12 +1,8 @@
-import PageTab from "./PageTab";
-import TopPage from "./TopPage";
+import TopPage from "@/features/routes/top/TopPage";
 
 const Home = () => {
   return (
-    <main>
-      <PageTab />
-      <TopPage />
-    </main>
+    <TopPage />
   );
 };
 

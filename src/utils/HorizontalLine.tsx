@@ -1,10 +1,6 @@
 import { CSSProperties } from "react";
 
-interface PropsType {
-  style?: CSSProperties;
-}
-
-const HorizontalLine = (props: PropsType) => {
+const HorizontalLine = () => {
   const defaultStyle = {
     width: "100%",
     height: "1px",
@@ -12,7 +8,7 @@ const HorizontalLine = (props: PropsType) => {
     margin: "10px 0"
   } as CSSProperties;
 
-  return <div style={props.style ? props.style : defaultStyle}></div>;
+  return <div style={defaultStyle}></div>;
 };
 
 export default HorizontalLine;

@@ -1,7 +1,8 @@
-import BackgroundImage from "../backgroundImage";
-import profile from "../../../public/profile.png";
-import TableRow from "./TableRow";
-import "./profilepage.css";
+import BackgroundImage from "@/utils/backgroundImage";
+import HorizontalLine from "@/utils/HorizontalLine";
+import profile from "@/../public/profile.png";
+import TableRow from "@/features/routes/profile/TableRow";
+import "@/features/routes/profile/profilepage.css";
 
 const carrer = `高校時代まで、愛知県の田舎町（豊川市）で生まれ育った
 小学時代はわんぱく少年で親に迷惑かけることもしばしば
@@ -27,6 +28,7 @@ const ProfilePage = () => {
                     <TableRow title="保有資格" item="TOEIC L&R 830、基本情報技術者試験" />
                 </tbody>
             </table>
+            <HorizontalLine />
         </div>
     );
 }

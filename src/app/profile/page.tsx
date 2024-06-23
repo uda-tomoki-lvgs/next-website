@@ -1,12 +1,8 @@
-import PageTab from "../PageTab";
-import ProfilePage from "./Profilepage";
+import ProfilePage from "@/features/routes/profile/Profilepage";
 
 const Profile = () => {
     return (
-        <main>
-        <PageTab />
         <ProfilePage />
-        </main>
     );
 }
 

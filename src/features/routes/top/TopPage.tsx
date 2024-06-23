@@ -1,8 +1,8 @@
 import Link from "next/link";
-import HorizontalLine from "./HorizontalLine";
-import BackgroundImage from "./backgroundImage";
-import toppage from "../../public/toppage.png";
-import "./toppage.css";
+import HorizontalLine from "@/utils/HorizontalLine";
+import BackgroundImage from "@/utils/backgroundImage";
+import toppage from "@/../public/toppage.png";
+import "@/features/routes/top/toppage.css";
 
 const TopPage = () => {
   return (
@@ -10,7 +10,7 @@ const TopPage = () => {
       <div className="site-title">宇田 知生のホームページ</div>
       <div className="flex-info">
         <div className="left-info">
-          <img className="self-photo" src="/IMG_6220.jpeg" />
+          <img className="self-photo" src="/myself.jpeg" alt="宇田 知生" />
           <div className="self-index">
             宇田 知生（うだ ともき）
             <br />

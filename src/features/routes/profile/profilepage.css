@@ -1,5 +1,4 @@
 .profile-page {
-    margin-left: 5px;
     white-space: pre-wrap;
 }
 
@@ -12,7 +11,7 @@
 }
 
 table {
-    margin: 0 auto;
+    margin: 0 auto 60px auto;
     border-spacing: 50px 30px;
 }
 

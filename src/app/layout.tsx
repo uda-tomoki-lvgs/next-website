@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import PageTab from "@/features/common/PageTab";
+import "@/utils/globals.css";
 
 export const metadata: Metadata = {
   title: "宇田知生のホームページ",
@@ -13,7 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="jp">
-      <body>{children}</body>
+      <body>
+        <main>
+          <PageTab />
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
