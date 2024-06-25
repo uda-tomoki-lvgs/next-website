@@ -26,7 +26,7 @@
   .pagetab {
     background-color: #f0f0ff;
     border-bottom: 0.5px solid #000000;
-    box-shadow: inset 0px -5px 0px 1px #cccccc;
+    box-shadow: inset 0px -5px 0px 0px #cccccc;
     padding: 20px 0;
   }
 
