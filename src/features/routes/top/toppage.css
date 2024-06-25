@@ -97,6 +97,7 @@
     }
 
     .attention-info {
+        font-weight: bold;
         margin-bottom: 20px;
     }
 
@@ -104,6 +105,11 @@
         width: 200px;
         display: table-cell;
         margin: auto;
+    }
+
+    .latest-info {
+        font-weight: bold;
+        padding: 0 5px;
     }
 
     .latest-info-title {
