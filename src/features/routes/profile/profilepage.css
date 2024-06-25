@@ -1,21 +1,49 @@
-.profile-page {
-    white-space: pre-wrap;
+@media screen and (min-width: 1024px) {
+    .profile-page {
+        white-space: pre-wrap;
+    }
+
+    .profile-title {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    table {
+        margin: 0 auto 60px auto;
+        border-spacing: 50px 30px;
+    }
+
+    td {
+        text-align: left;
+        vertical-align: top;
+    }
 }
 
-.profile-title {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
+@media screen and (max-width: 1023px) {
+    .profile-page {
+        white-space: pre-wrap;
+        padding-bottom: 50px;
+    }
 
-table {
-    margin: 0 auto 60px auto;
-    border-spacing: 50px 30px;
-}
+    .profile-title {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
 
-td {
-    text-align: left;
-    vertical-align: top;
+    table {
+        margin: 0 auto;
+        border-spacing: 10px 5px;
+    }
+
+    td {
+        min-width: 80px;
+        text-align: left;
+        vertical-align: top;
+    }
 }
