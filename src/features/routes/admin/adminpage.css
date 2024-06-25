@@ -1,18 +1,42 @@
-.admin-page {
-    background-color: #f0f0ff;
-    text-align: center;
+@media screen and (min-width: 1024px) {
+    .admin-page {
+        background-color: #f0f0ff;
+        text-align: center;
+    }
+
+    .admin-title {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .admin-attention {
+        text-align: left;
+        display: inline-block;
+        margin: 0 auto 60px auto;
+    }
 }
 
-.admin-title {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
+@media screen and (max-width: 1023px) {
+    .admin-page {
+        background-color: #f0f0ff;
+        text-align: center;
+        padding-bottom: 50px;
+    }
 
-.admin-attention {
-    text-align: left;
-    display: inline-block;
-    margin: 0 auto 60px auto;
+    .admin-title {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .admin-attention {
+        text-align: left;
+        display: inline-block;
+        margin: 0 5px 30px 5px;
+    }
 }

@@ -7,7 +7,10 @@ import "@/features/routes/top/toppage.css";
 const TopPage = () => {
   return (
     <div className="top-page" style={BackgroundImage(toppage)}>
-      <div className="site-title">宇田 知生のホームページ</div>
+      <div className="site-title">
+        <div>宇田 知生の</div>
+        <div>ホームページ</div>
+      </div>
       <div className="flex-info">
         <div className="left-info">
           <img className="self-photo" src="/myself.jpeg" />
