@@ -4,7 +4,12 @@ import "@/utils/globals.css";
 
 export const metadata: Metadata = {
   title: "宇田知生のホームページ",
-  description: "宇田知生って誰なの？",
+  description:
+    "宇田知生（うだ ともき）の全てが詰まってるWebサイト。",
+  openGraph: {
+    title: "宇田知生のホームページ",
+    description: "宇田知生（うだ ともき）の全てが詰まってるWebサイト。",
+  },
 };
 
 export default function RootLayout({
