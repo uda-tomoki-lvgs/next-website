@@ -9,6 +9,11 @@ type Numer0nOptionProps = {
   setGameStart: Dispatch<SetStateAction<boolean>>;
 };
 
+type difficultyArray = {
+  value: difficulty;
+  text: string;
+};
+
 const Numer0nOption = ({
   setDifficulty,
   setDigits,
@@ -19,11 +24,19 @@ const Numer0nOption = ({
   const handleSelectDifferChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setDifficulty(event.target.value as difficulty);
   };
+  const difficultyArray: difficultyArray[] = [
+    { value: "god", text: "最強" },
+    { value: "strong", text: "強い" },
+    { value: "normal", text: "普通" },
+    { value: "weak", text: "弱い" },
+    { value: "zako", text: "ザコ" },
+  ];
 
   // ケタ数
   const handleDigitsChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setDigits(Number(event.target.value) as digits);
   };
+  const digitsArray: digits[] = [3, 4, 5, 6, 7, 8, 9];
 
   // 先攻・後攻
   const handleAttackChange = (event: ChangeEvent<HTMLSelectElement>) => {
@@ -42,11 +55,9 @@ const Numer0nOption = ({
         <div className="select-differ-title">強さ</div>
         <div className="select-differ-dial">
           <select className="select-differ" onChange={handleSelectDifferChange}>
-            <option value="god">最強</option>
-            <option value="strong">強い</option>
-            <option value="normal">普通</option>
-            <option value="weak">弱い</option>
-            <option value="zako">ザコ</option>
+            {difficultyArray.map(({ value, text }) => (
+              <option value={value}>{text}</option>
+            ))}
           </select>
         </div>
       </div>
@@ -54,13 +65,9 @@ const Numer0nOption = ({
         <div className="select-digit-title">対戦桁数</div>
         <div className="select-ditit-dial">
           <select className="select-digit" onChange={handleDigitsChange}>
-            <option value={3}>3ケタ</option>
-            <option value={4}>4ケタ</option>
-            <option value={5}>5ケタ</option>
-            <option value={6}>6ケタ</option>
-            <option value={7}>7ケタ</option>
-            <option value={8}>8ケタ</option>
-            <option value={9}>9ケタ</option>
+            {digitsArray.map((value) => (
+              <option value={value}>{value}</option>
+            ))}
           </select>
         </div>
       </div>
